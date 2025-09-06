@@ -814,6 +814,145 @@ body {
   transform: scale(0.98);
 }
 
+/* Login Page Styles */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--container-padding);
+  background: var(--gray-50);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.login-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-blue);
+  border-radius: 16px;
+  color: white;
+}
+
+.login-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--gray-900);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.login-subtitle {
+  font-size: var(--text-base);
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.login-form {
+  background: var(--white);
+  border-radius: 16px;
+  padding: var(--space-6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: var(--space-6);
+}
+
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--gray-700);
+  margin-bottom: var(--space-2);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-4);
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  font-size: var(--text-base);
+  background: var(--white);
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-error {
+  color: var(--error);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--space-3);
+  accent-color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+.checkbox-label {
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.forgot-password-link {
+  color: var(--primary-blue);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.test-credentials {
+  background: #FEF3C7;
+  border: 1px solid #FCD34D;
+  border-radius: 8px;
+  padding: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.test-credentials-title {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: #92400E;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.test-credentials-list {
+  font-size: var(--text-xs);
+  color: #92400E;
+  line-height: var(--leading-relaxed);
+}
+
+.test-credentials-list div {
+  margin-bottom: var(--space-1);
+}
+
 /* Equipment Detail Page */
 .equipment-detail-back-btn {
   display: flex;
